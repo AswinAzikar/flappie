@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 
 
 
-final game  = Flappie();
-
 void main() {
-  runApp(GameWidget(game: game,));
+  runApp(GameWidget(game: Flappie(),));
 }
