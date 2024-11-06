@@ -11,7 +11,7 @@ class Background extends SpriteComponent with HasGameRef<Flappie> {
   @override
   Future<void> onLoad() async {
   
-String backGroundImage = pathLoaderFunctionForFlame(Assets.images.background.path);
+String backGroundImage = imagePathLoaderFunctionForFlame(Assets.images.background.path);
 
     final backgroundImage = await Flame.images.load(backGroundImage);
     size = gameRef.size;
